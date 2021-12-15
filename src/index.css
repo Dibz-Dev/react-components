@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Love+Ya+Like+A+Sister&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,578 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* TABS TABS TABS */
+
+.tabs-container {
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 30px;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+}
+
+.list-container {
+
+  border-right: 2px solid gainsboro;
+  align-self: center;
+  padding-right: 10px;
+ 
+
+}
+
+.list {
+
+}
+
+.list li {
+
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1.9em;
+  list-style: none;
+  cursor: pointer;
+ 
+
+}
+
+.list li:hover {
+
+  border-left: 5px solid blueviolet;
+}
+
+.content-box {
+
+}
+
+.content {
+
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s opacity;
+}
+
+.content.show {
+
+  height: max-content;
+  opacity: 100%;
+  width: 80%;
+  text-align: center;
+  transition: 0.8s opacity;
+}
+
+.list-icon {
+
+  font-size: larger;
+}
+
+.content h3 {
+
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.content p {
+
+  font-size: 1.9em;
+  letter-spacing: 0.15em;
+  line-height: 2;
+}
+
+.price-container {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 300px auto 0 auto;
+  /* background-color: rgba(255, 217, 0, 0.356); */
+  background-color: #77A0EB;
+  width: 100%;
+  height: 350px;
+
+}
+
+.graph-box {
+
+  margin: auto;
+  justify-content: center;
+  transform: translateY(-30%);
+
+}
+
+.graph-position {
+
+  /* width: 40%; */
+  height: 400px;
+
+
+}
+
+.price-btn {
+
+  cursor: pointer;
+  padding: 20px 15px;
+  font-size: 0.7em;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.price-btn:hover {
+
+  transform: scale(1.05);
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  color: rgb(80, 79, 79);
+}
+
+button + button {
+
+  margin-left: 25px;
+}
+
+
+.NDIS-box, .socialPace-box {
+
+  position: relative;
+  width: 100%;
+  text-align: center;
+  align-self: start;
+  font-size: 2em;
+}
+
+
+.socialPace-position {
+
+  max-height: 250px;
+  max-width: 120px;
+}
+.price-container h2 {
+
+  margin-top: -50px;
+}
+
+
+.price-container h4 {
+
+  font-size: 2em;
+}
+
+
+/* BREAKER BREAKER BREAKER */
+
+.breaker {
+
+  margin-top: 200px;
+
+}
+
+.breaker-box {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #77A0EB;
+
+}
+
+.safety-blurb {
+
+  align-items: center;
+  margin-left: 30px;
+  
+  
+}
+
+.safety-blurb h3 {
+
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  
+  
+}
+
+.breaker-box p {
+
+  margin-left: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.safety-btn-box {
+
+  justify-self: center;
+  align-self: center;
+}
+
+.safety-btn-box button {
+
+  padding: 15px 35px;
+  font-size: 1.5em;
+  border-radius: 6px;
+  border: none;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+
+/* CONTACT FORM CONTACT FORM */
+
+.form {
+
+  display: grid;
+  grid-template-columns: 1fr ;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 30px;
+  min-height: 550px;
+}
+
+.form-inner {
+
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+ 
+}
+
+.form.hide {
+
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.mob-form-header {
+
+  text-align: center;
+  color:#77A0EB;
+}
+
+.form-btn {
+
+  cursor: pointer;
+  padding: 10px 30px;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-family: 'IBM Plex Mono', sans-serif;
+  
+}
+
+.firstname {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.lastname-box {
+
+  margin-top: 10px;
+}
+
+
+.input-box {
+
+  padding: 10px 0;
+  font-size: 1.2em;  
+
+}
+
+
+.input-box input{
+
+  padding: 5px 5px;
+  font-size: 1em;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 600;
+  width: 80%;
+
+}
+
+.message-box {
+
+  margin-top: 30px;
+  width: 100%;
+}
+
+.message {
+
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  font-size: 1em;
+  padding: 10px;
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 600;
+}
+
+.form-inner input {
+
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  
+}
+
+.thankyou-box {
+
+  margin: auto;
+  padding: 0;
+  color: green;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  width: 60%;
+  text-align: center;
+
+}
+
+.thankyou-msg {
+
+  font-family: 'IBM Plex Mono', sans-serif;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.contact-info {
+
+ display: none;
+}
+
+.phoneEmail-box {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  font-family:  'IBM Plex Mono', sans-serif;
+  font-weight: 600;
+
+}
+
+.phoneEmail-box h5 {
+
+  color: black;
+
+
+}
+
+.phoneEmail-box h5:hover {
+
+  color: #5f90eb;
+  transform: scale(1.1);
+
+
+}
+
+
+/* BUSINESS CARD BUSINESS CARD */
+
+.b-card {
+
+  width: 20%;
+  margin: auto;
+  border: 1px solid blue;
+}
+
+
+.card-icon {
+
+  font-size: 2.5em;
+  justify-self: center;
+  padding: 20px;
+
+}
+
+
+
+@media (min-width: 800px) {
+
+  .form {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    margin: 100px auto 0 auto;
+    border-radius: 30px;
+    min-height: 550px;
+  }
+  
+  .form-inner {
+  
+    padding: 20px;
+    width: 100%;
+    margin: 50px auto 0 auto;
+    
+  }
+  
+
+  .mob-form-header {
+
+    display: none;
+  }
+  
+  .form-btn {
+  
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    font-size: 1.3em;
+
+  }
+  
+  
+  .input-box {
+  
+    padding: 10px 0;
+    font-size: 1.2em;
+  
+  }
+
+  .firstname {
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .lastname-box {
+
+    margin-top: 0;
+    margin-left: 20px;
+  }
+  
+  .email {
+  
+    width: 400px;
+  }
+  
+  .input-box input{
+  
+    padding: 5px 5px;
+    font-size: 1em;
+  
+  }
+  
+  .message-box {
+  
+    margin-top: 30px;
+  }
+  
+  .message {
+  
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 10px;
+  }
+  
+  .form-inner input {
+  
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    
+  }
+  
+  .thankyou-box {
+  
+    margin: 0 auto;
+    padding: 0;
+    color: green;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: 60%;
+    text-align: center;
+  
+  
+   
+  }
+  
+  .thankyou-msg {
+  
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 800;
+    padding: 10px;
+  }
+  
+  .contact-info {
+  
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: start;
+    text-align: center; 
+    color: #77A0EB;
+    padding: 0 20px ;
+    font-size: 1.2em;
+  }
+  
+  .phoneEmail-box {
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    font-family:  'IBM Plex Mono', sans-serif;
+    font-weight: 600;
+  
+  }
+  
+  .phoneEmail-box h5 {
+  
+    color: black;
+  
+  
+  }
+  
+  .phoneEmail-box h5:hover {
+  
+    color: #5f90eb;
+    transform: scale(1.1);
+  
+  
+  }
+  
+  
+
+}
+
+@media (min-width: 1000px) {
+
+  .form {
+    width: 90%;
+  }
+
+  .contact-info {
+
+    font-size: 1em;
+  }
+
+  .phoneEmail-box {
+  
+    left: 0%;
+   
+  
+  }
 }
