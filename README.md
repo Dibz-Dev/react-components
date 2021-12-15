@@ -1,4 +1,4 @@
-This is a colection of new react components I m working on to help improve my skills but also for futire projects I may work on.
+This is a collection of new react components I'm working on to help improve my skills but also for future projects I may work on.
 
 
 
