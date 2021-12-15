@@ -1,3 +1,7 @@
+This is a colection of new react components I m working on to help improve my skills but also for futire projects I may work on.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
